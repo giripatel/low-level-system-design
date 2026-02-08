@@ -1,4 +1,4 @@
-package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Singleton;
+package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Singleton.Problem;
 
 public class WithoutSingleton {
 

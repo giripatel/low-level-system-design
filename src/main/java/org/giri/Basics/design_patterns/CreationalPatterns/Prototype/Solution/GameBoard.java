@@ -1,9 +1,9 @@
-package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Problem;
+package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Solution;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameBoard {
+public class GameBoard implements Prototype<GameBoard> {
 
     private List<GamePiece> board = new ArrayList<>();
 
@@ -13,5 +13,13 @@ public class GameBoard {
 
     public List<GamePiece> getBoard() {
         return board;
+    }
+
+    public GameBoard clone() {
+        GameBoard clone = new GameBoard();
+        for(GamePiece piece: board) {
+            clone.addGamePiece(piece.clone());
+        }
+        return clone;
     }
 }

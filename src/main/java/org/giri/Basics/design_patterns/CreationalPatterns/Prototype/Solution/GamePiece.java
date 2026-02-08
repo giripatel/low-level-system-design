@@ -1,6 +1,6 @@
-package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Problem;
+package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Solution;
 
-public class GamePiece {
+public class GamePiece implements Prototype<GamePiece> {
     private String color;
     private int position;
 
@@ -9,6 +9,9 @@ public class GamePiece {
         this.position = position;
     }
 
+    public GamePiece clone() {
+        return new GamePiece(this.color, this.position);
+    }
     public void setColor(String color) {
         this.color = color;
     }

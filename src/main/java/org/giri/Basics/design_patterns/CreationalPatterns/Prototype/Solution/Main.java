@@ -1,4 +1,4 @@
-package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Problem;
+package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Prototype.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,10 +10,6 @@ public class Main {
         board.addGamePiece(new GamePiece("yellow", 4));
 
         System.out.println(board.getBoard());
-        GameBoard copiedBoard = new GameBoard();
-        for(GamePiece piece: board.getBoard()) {
-            copiedBoard.addGamePiece(new GamePiece(piece.getColor(), piece.getPosition()));
-        }
-        System.out.println(copiedBoard.getBoard());
+        System.out.println(board.clone().getBoard());
     }
 }

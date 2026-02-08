@@ -1,4 +1,4 @@
-package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Factory.Problem;
+package main.java.org.giri.Basics.design_patterns.CreationalPatterns.Factory.Solution;
 
 public interface Transport {
     void deliver();

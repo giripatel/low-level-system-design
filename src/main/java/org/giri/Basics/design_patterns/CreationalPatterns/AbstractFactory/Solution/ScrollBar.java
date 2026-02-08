@@ -1,4 +1,5 @@
 package main.java.org.giri.Basics.design_patterns.CreationalPatterns.AbstractFactory.Solution;
 
 public interface ScrollBar {
+    void scroll();
 }

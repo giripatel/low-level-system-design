@@ -16,7 +16,7 @@ public class Ride {
         this.rideStatus = RideStatus.SCHEDULED;
     }
 
-    public void serFare() {
+    public void calculateFare() {
         this.fare = fareStrategy.calcFare(driver.getVehicle(), distance);
     }
 
@@ -26,11 +26,12 @@ public class Ride {
 
     public void setRideStatus(RideStatus rideStatus) {
         this.rideStatus = rideStatus;
-        notifyUsers();
+        notifyUsers(rideStatus);
     }
 
-    public void notifyUsers(){
-        passenger.notify("Your ride is booked for fare" + fare +" with "+ driver.name);
-        driver.notify("Your ride is booked for fare" + fare +" with "+ passenger.name);
+    public void notifyUsers(RideStatus rideStatus){
+        passenger.notify("Ride Status : " + rideStatus);
+        driver.notify("Ride Status : " + rideStatus);
+
     }
 }

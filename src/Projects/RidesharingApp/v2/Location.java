@@ -18,7 +18,7 @@ public class Location {
         return longitude;
     }
 
-    private double calcDistance(Location to) {
+    public double calcDistance(Location to) {
         double dx = this.getLatitude() - to.getLatitude();
         double dy = this.getLongitude() - to.getLongitude();
         return Math.sqrt((dx * dx)  + (dy * dy));

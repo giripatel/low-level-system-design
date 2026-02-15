@@ -18,4 +18,6 @@ abstract class User {
     public void setLocation(Location location) {
         this.location = location;
     }
+
+    public abstract void notify(String msg);
 }

@@ -1,6 +1,7 @@
 package Projects.Chess.MovementStrategyPattern;
 
-import Practice.TicTacToe.P1.Utility.Board;
+
+import Projects.Chess.Utility.Board;
 import Projects.Chess.Utility.Cell;
 
 public interface MovementStrategy {

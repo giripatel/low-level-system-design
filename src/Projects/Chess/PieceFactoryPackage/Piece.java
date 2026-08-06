@@ -1,6 +1,8 @@
 package Projects.Chess.PieceFactoryPackage;
 
 import Projects.Chess.MovementStrategyPattern.MovementStrategy;
+import Projects.Chess.Utility.Board;
+import Projects.Chess.Utility.Cell;
 
 public abstract class Piece {
 
@@ -24,5 +26,9 @@ public abstract class Piece {
 
     public boolean isWhite() {
         return isWhite;
+    }
+
+    public boolean canMove(Board board, Cell startCell, Cell endCell) {
+        return strategy.canMove(board, startCell, endCell);
     }
 }

@@ -1,6 +1,6 @@
 package Projects.Chess.MovementStrategyPattern.ConcreteMovementStrategies;
 
-import Practice.TicTacToe.P1.Utility.Board;
+import Projects.Chess.Utility.Board;
 import Projects.Chess.MovementStrategyPattern.MovementStrategy;
 import Projects.Chess.Utility.Cell;
 

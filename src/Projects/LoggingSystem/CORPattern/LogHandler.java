@@ -23,7 +23,7 @@ public abstract class LogHandler {
     }
 
     public void logMessage(int level, String message) {
-        if (this.level <= level) {
+        if (this.level >= level) {
             LogLevel logLevel = intToLogLevel(level);
             LogMessage logMessage = new LogMessage(logLevel, message, 409384309849l);
             if (logAppender != null) {
